@@ -1,0 +1,166 @@
+Regles generales
+*, *:after, *:before {
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  font-size: 2.6rem;            /* 14px par défaut */
+  font-family: 'Noto sans', sans-serif;
+}
+
+p {
+  font-weight: 100;
+}
+
+@font-face {
+  font-family: 'VAG Round';
+  src: url('../font/VAGRound.woff2') format('woff2'),
+      url('../font/VAGRound.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Mark My Words';
+  src: url('../font/MarkMyWords.woff2') format('woff2'),
+      url('../font/MarkMyWords.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+a, a:hover, a:visited{                /* ATTENTION LES LIENS SONT BLANC DANS CE MODELE*/
+  color: #FFF;
+  text-decoration: none;
+}
+img{
+  max-width:100%;
+  height: auto;
+  vertical-align: middle; 
+}
+
+/******** HEADER *******/
+
+header {
+  height: 100vh;
+  background-color: #f2f2f2;
+}
+
+header h1 {
+  padding: 40px;
+  height: 10vh;
+  text-align: center;
+}
+
+header h1 img {
+  width: 55%;
+  height: auto;
+}
+
+header nav {
+  padding: 30vh 0px;
+}
+
+header nav ul li {
+  width: 200px;
+  padding: 10px 15px;
+  margin: 10px auto;
+  border-radius: 19px;
+  text-align: center;
+  background-color: #f2b80c;
+}
+
+/******** PREMIERE SECTION *********/
+
+.partager {
+  padding: 30px 20px;
+  text-align: center;
+  background: url(../img/photo.png) center center no-repeat;
+  background-size: cover;
+  color: white;
+}
+
+.partager h2 {
+  display: none;
+}
+.partager h3 {
+  padding: 20px 0px;
+  font-family: 'Mark My Words';
+}
+
+.partager p {
+  width: 200px;
+  padding: 10px 15px;
+  margin: 10px auto;
+  border-radius: 19px;
+  text-align: center;
+  background-color: rgba(140, 22, 65, 0.6);
+  font-family: 'VAG Round';
+}
+
+/*********** MAIN **********/
+
+.presentation {
+  padding: 56px 32px;
+  color: white;
+  text-align: center;
+  background-color: #f2b80c;
+}
+
+.presentation h2 {
+  font-size: 4.0rem;
+  font-family: 'Mark My Words';
+  margin-bottom: 40px;
+}
+
+.presentation p {
+  font-size: 1.8rem;
+  margin: 20px auto;
+}
+
+/********* PLATS *********/
+
+.plats {
+  padding: 4vh;
+}
+
+.plats p {
+  font-size: 1.6rem;
+  margin-top: 15px;
+}
+
+.plats h2 {
+  font-size: 2.4rem;
+  text-align: center;
+}
+
+.plats h3 {
+  padding-bottom: 15px;
+}
+
+.plats h2,h3 {
+  color: #8C0E02;
+  font-family: 'Mark My Words';
+}
+
+.plats h3:after{
+  content:"";
+  display: block;
+  position:relative;
+  top:10px;
+  width:40%;
+  height: 2px;
+  background:#8C1641;
+}
+
+.plats figure img {
+  display: inline-block;
+  width: 43vw;
+}
+
+.plats figure figcaption {
+  display: inline-block;
+  width: 32vw;
+  padding-left: 24px;
+}
